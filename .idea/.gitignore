@@ -3,3 +3,10 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+.env
+env/
+__pycache__/
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
