@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables (will be passed differently)
+env/.env
+
+# Git
+.git/
+.gitignore
+
+# ngrok
+ngrok
+ngrok.exe
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
