@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 from service.agent_service import get_agent
 load_dotenv()
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-router = APIRouter(tags=["TelegramRouter"], prefix="/api")
+router = APIRouter(tags=["TelegramApi"], prefix="/agent")
+
 
 @router.post("/telegram")
 async def create_telegram_router(request: Request, background_tasks: BackgroundTasks):

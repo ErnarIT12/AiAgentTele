@@ -9,10 +9,10 @@ from sqlalchemy.sql.functions import session_user
 load_dotenv()
 def get_agent(session_id : str | None = None ) -> Agent:
     api_key = os.getenv("OPENAI_API_KEY")
-    if api_key == None:
+    if api_key is None:
         raise ValueError("OPENAI_API_KEY is not set")
     return Agent(
-        model =OpenAIChat(id = "gpt-3.5- turbo"),
+        model = OpenAIChat(id = "gpt-4-turbo"),
         description= "ты помощник который знает все о сфере финансов",
         db =SqliteDb(db_file="agent.db"),
         session_id = session_id,
