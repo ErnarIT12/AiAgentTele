@@ -1,4 +1,6 @@
 .env
+agent.db
+.idea
 .venv/
 venv/
 env/
@@ -12,5 +14,4 @@ __pycache__/
 *.pyo
 *.egg-info/
 .pytest_cache/
-agent.db
-.idea
+
