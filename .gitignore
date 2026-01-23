@@ -1,17 +1,30 @@
+# Окружение и секреты
 .env
 agent.db
-.idea
+
+# Виртуальные окружения
 .venv/
 venv/
 env/
 ENV/
 venvs/
 *.virtualenv
-.env
-*.pyc
+
+# Python (кэш и сборка)
 __pycache__/
-*.pyd
+*.pyc
 *.pyo
+*.pyd
 *.egg-info/
+dist/
+build/
+
+# Инструменты разработки (IDE)
+.idea/
+.vscode/
+
+# Тестирование
 .pytest_cache/
+.coverage
+htmlcov/
 
